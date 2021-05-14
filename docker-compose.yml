@@ -1,0 +1,18 @@
+version: "3"
+services:
+  api:
+    image: atto/core-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: ${APP_NAME}
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - /app/node_modules
+      - ${PWD}:/app
+    command: ${APP_BUILD}
+networks:
+  default:
+    external:
+      name: ${APP_NETWORK}
