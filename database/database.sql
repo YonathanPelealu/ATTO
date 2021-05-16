@@ -1,6 +1,10 @@
+DROP DATABASE IF EXISTS atto;
+
 CREATE DATABASE atto;
 
-CREATE TABLE users(
+\c atto
+
+CREATE TABLE IF NOT EXISTS users(
     id UUID PRIMARY KEY,
     name VARCHAR(40),
     email VARCHAR(40),
@@ -9,7 +13,7 @@ CREATE TABLE users(
     updatedAt DATE
 );
 
-CREATE TABLE actions(
+CREATE TABLE IF NOT EXISTS actions(
     id UUID PRIMARY KEY,
     userId UUID,
     task VARCHAR(255),
@@ -17,3 +21,8 @@ CREATE TABLE actions(
     createdAt DATE,
     updatedAt DATE
 );
+
+ALTER TABLE users
+    OWNER to postgres;
+ALTER TABLE actions
+    OWNER to postgres;
