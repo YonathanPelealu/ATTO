@@ -1,13 +1,22 @@
 # ATTO-API
 
-run `yarn` to install all dependecies on package.json file
-
-`npm run build` to compile .ts file into .js
-
-`npm run database` to create table needed
-
-`npm run debug` => run debug mode and start server
-
+to install all dependecies on package.json file
+```
+run `yarn` 
+```
+compile .ts
+```
+`npm run build`
+```
+create table needed
+```
+`npm run database`
+```
+run debug mode
+```
+`npm run debug`
+```
+```
 `npm run start` => start server
-
-[postman documentation] (https://www.getpostman.com/collections/0f06c869c1e717a03756)
+```
+[postman documentation](https://www.getpostman.com/collections/0f06c869c1e717a03756)
