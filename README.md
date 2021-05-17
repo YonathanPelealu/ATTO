@@ -2,13 +2,13 @@
 
 to install all dependecies on package.json file
 ```
-run `yarn` 
+`yarn` 
 ```
 compile .ts
 ```
 `npm run build`
 ```
-create table needed
+database migration
 ```
 `npm run database`
 ```
@@ -16,7 +16,8 @@ run debug mode
 ```
 `npm run debug`
 ```
+start server
 ```
-`npm run start` => start server
+`npm run start`
 ```
 [postman documentation](https://www.getpostman.com/collections/0f06c869c1e717a03756)
